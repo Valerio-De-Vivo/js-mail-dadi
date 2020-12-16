@@ -5,23 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dadi</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
-    <div id="giocatore" class="player">
 
-    </div>
+    <!-- MAIN  -->
+    
+    <div class="tavolo">
 
-    <div id="banco" class="croupier">
+        <div class="row">
 
-    </div>
+            <!-- SEZIONE GIOCATORE  -->
+            <div id="giocatore" class="player">
+                
+            </div>
 
-    <div id="play" class="btn">
-        Gioca
-    </div>
+            <!-- SEZIONE INFO GIOCO  -->
 
-    <div id="risultato">
+            <div class="info">
+                <h2><i class="fas fa-arrow-circle-left"></i> Giocatore</h2>
+                <h2> Banco <i class="fas fa-arrow-circle-right"></i></h2>
+            </div>
+
+            <!-- SEZIONE BANCO  -->
         
+            <div id="banco" class="croupier">
+        
+            </div>
+        </div>
+
+        <!-- SEZIONE PULSANTE GIOCA  -->
+    
+        <div class="row">
+            <div class="btn-col">
+                <p id="play">Gioca</p>
+            </div>
+        
+            <div id="risultato">
+        
+            </div>
+        </div>
     </div>
+
+
+    <!-- DADO ANIMATION -->
+
+    <div class="dice">
+		<div class="side one"><img src="https://openclipart.org/download/220834/1434442078.svg" alt="side one"/></div>
+		<div class="side two"><img src="https://openclipart.org/image/2400px/svg_to_png/220835/1434442095.png" alt="side two"/></div>
+		<div class="side three"><img src="https://openclipart.org/image/2400px/svg_to_png/220836/1434442108.png" alt="side three"/></div>
+		<div class="side four"><img src="https://openclipart.org/image/2400px/svg_to_png/220837/1434442120.png" alt="side four"/></div>
+		<div class="side five"><img src="https://openclipart.org/image/2400px/svg_to_png/220838/1434442131.png" alt="side five"/></div>
+		<div class="side six"><img src="https://openclipart.org/image/2400px/svg_to_png/220839/1434442143.png" alt="side six"/></div>
+	</div>
 
     <script src="js/script.js"></script>
 </body>

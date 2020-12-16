@@ -13,11 +13,16 @@ play.addEventListener( 'click' , function () {
     // DICHIARAZIONE VINCITORE 
 
     var risultato = 'PAREGGIO';
+    document.getElementById('risultato').className = 'black';
 
     if (dadi > banco) {
-        risultato = 'HAI VINTO!'
+        risultato = 'HAI VINTO!';
+        document.getElementById('risultato').className = 'green';
     } else if (banco > dadi) {
-        risultato = 'HAI PERSO! '
+        risultato = 'HAI PERSO!';
+        document.getElementById('risultato').className = 'red';
+    } else {
+        document.getElementById('risultato').className = 'black';
     }
 
     document.getElementById('risultato').innerHTML = risultato;

@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* ANIMAZIONE DADO  */
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.dice {
+  position: fixed;
+  bottom: 5%;
+  left: 45%;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+  animation: spin 9s infinite alternate;
+}
+
+@keyframes spin {
+  16% {
+    transform: rotateY(-90deg);
+  }
+
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(90deg) rotateX(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
+}
+
+.side {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.one {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.two {
+  transform: translateZ(100px);
+}
+
+.three {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.four {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.five {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.six {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+/* MAIN CONTENT  */
+
+.tavolo {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.player,
+.croupier {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 300px;
+  font-size: 6em;
+  border-radius: 50px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.info h2 {
+  color: #fff;
+}
+
+.btn-col {
+  width: 100%;
+  text-align: center;
+}
+
+p#play {
+  background-color: #fff;
+  display: inline-block;
+  padding: 30px 200px;
+  border-radius: 60px;
+  margin: 20px 0;
+  font-size: 4em;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.434);
+}
+
+p#play:hover {
+  cursor: pointer;
+  background-color: lightgreen;
+  color: white;
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.434);
+}
+
+#risultato {
+  width: 100%;
+  text-align: center;
+  font-size: 4em;
+}
+
+.green {
+  color: greenyellow !important;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black !important;
+}
